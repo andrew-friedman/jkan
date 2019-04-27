@@ -1,6 +1,9 @@
 - name: Arts / Culture / History
   logo: /img/categories/arts-culture-history.svg
   featured: true
+- name: 311 Data
+  logo: /img/categories/311.svg
+  featured: true
 - name: Budget / Finance
   logo: /img/categories/budget-finance.svg
   logo_credit: Renan Ferreira Santos from the Noun Project
