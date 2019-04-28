@@ -49,10 +49,14 @@ resource_fields:
       - kmz
       - shp
       - xml
+      - url
+      - json-api
 
 organization_fields:
   - field_name: title
     label: Title
+  - field_name: state
+    label: State
   - field_name: description
     label: Description
   - field_name: logo

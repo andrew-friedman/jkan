@@ -1,6 +1,6 @@
 ---
 schema: default
-title: 311 Service Requests 
+title: Chicago 311 Service Requests 
 organization: City of Chicago
 notes: Chicago's 311 Service Requests
 resources:

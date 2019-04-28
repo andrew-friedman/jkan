@@ -1,6 +1,6 @@
 ---
 schema: default
-title: 311 Service Requests 
+title: Boston 311 Service Requests 
 organization: City of Boston
 notes: Boston's 311 Service Requests
 resources:

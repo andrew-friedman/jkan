@@ -1,6 +1,6 @@
-title: JKAN
-greeting: Welcome to JKAN
-description: A lightweight, backend-free open data portal, powered by Jekyll.
+title: Andrew's Data Portal
+greeting: Welcome to The Andrew's Data Portal
+description: If you are interested in seeing the Application of Data on Boston's 311 data click here.
 baseurl: /jkan
 logo: /img/jkan.png
 
