@@ -13,6 +13,8 @@ resources:
   - name: New York City Government Download Website
     url: 'https://data.cityofnewyork.us/Social-Services/311-Service-Requests-from-2010-to-Present/erm2-nwe9'
     format: url
+license: 'http://www.nyc.gov/html/misc/html/tou.html'
 category:
   - 311 Data
+maintainer: NYC OpenData
 ---

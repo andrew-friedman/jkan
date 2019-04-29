@@ -13,6 +13,8 @@ resources:
   - name: City of Memphis Download Website
     url: 'https://data.memphistn.gov/Good-Government/Service-Requests-Since-2016/e2xt-xuk7'
     format: url
+license: 'Public Domain'
 category:
   - 311 Data
+maintainer: Nick Walker
 ---

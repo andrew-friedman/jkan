@@ -10,6 +10,8 @@ resources:
   - name: City of Denver Download Website
     url: 'https://www.denvergov.org/opendata/dataset/city-and-county-of-denver-311-service-requests-2007-to-current'
     format: url
+license: 'https://www.denvergov.org/opendata/termsofuse'
 category:
   - 311 Data
+maintainer: City and County of Denver
 ---

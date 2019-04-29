@@ -13,6 +13,8 @@ resources:
   - name: City of Austin Download Website
     url: 'https://data.austintexas.gov/Utilities-and-City-Services/311-Unified-Data/i26j-ai4z'
     format: url
+license: 'Public Domain'
 category:
   - 311 Data
+maintainer: Austin 311
 ---

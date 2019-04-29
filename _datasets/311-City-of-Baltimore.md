@@ -13,6 +13,9 @@ resources:
   - name: City of Baltimore Download Website
     url: 'https://data.baltimorecity.gov/City-Services/311-Customer-Service-Requests/9agw-sxsr'
     format: url
+license: 'http://creativecommons.org/licenses/by/3.0/legalcode'
 category:
   - 311 Data
+maintainer: Open Baltimore
+maintainer email: openbaltimore@baltimorecity.gov
 ---

@@ -13,6 +13,8 @@ resources:
   - name: City of Milwaukee Download Website
     url: 'https://data.milwaukee.gov/dataset/callcenterdatacurrent'
     format: url
+license: 'http://opendefinition.org/okd/'
 category:
   - 311 Data
+maintainer: Milwaukee Open Data Portal
 ---

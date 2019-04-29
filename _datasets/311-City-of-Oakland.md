@@ -13,6 +13,8 @@ resources:
   - name: City of Oakland Download Website
     url: 'https://data.oaklandnet.com/Infrastructure/Service-requests-received-by-the-Oakland-Call-Cent/quth-gb8e'
     format: url
+license: 'Public Domain'
 category:
   - 311 Data
+maintainer: John M
 ---

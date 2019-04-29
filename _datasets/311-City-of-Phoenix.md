@@ -13,6 +13,7 @@ resources:
   - name: City of Phoenix Download Website
     url: 'https://www.phoenixopendata.com/dataset/calls-for-service'
     format: url
+license: 'http://opendefinition.org/okd/'
 category:
   - 311 Data
 ---

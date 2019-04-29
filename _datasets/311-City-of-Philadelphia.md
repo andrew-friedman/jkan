@@ -15,4 +15,6 @@ resources:
     format: url
 category:
   - 311 Data
+maintainer: OpenDataPhilly
+maintainer email: info@opendataphilly.org.
 ---

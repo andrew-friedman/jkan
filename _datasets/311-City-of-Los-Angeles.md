@@ -13,6 +13,8 @@ resources:
   - name: City of Los Angeles Download Website
     url: 'https://data.lacity.org/A-Well-Run-City/MyLA311-Service-Request-Data-2019/pvft-t768'
     format: url
+license: 'https://creativecommons.org/publicdomain/zero/1.0/legalcode'
 category:
   - 311 Data
+maintainer: Information Technology
 ---

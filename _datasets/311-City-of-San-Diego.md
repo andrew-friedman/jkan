@@ -10,6 +10,9 @@ resources:
   - name: City of San Diego Download Website
     url: 'https://data.sandiego.gov/datasets/get-it-done-311/'
     format: url
+license: 'http://www.opendefinition.org/licenses/odc-pddl'
 category:
   - 311 Data
+maintainer: City of San Diego
+maintainer email: data@sandiego.gov
 ---

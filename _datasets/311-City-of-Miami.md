@@ -13,6 +13,8 @@ resources:
   - name: City of Miami Download Website
     url: 'https://data.miamigov.com/Government/City-of-Miami-Service-Requests-Beta-/6q9s-asrs'
     format: url
+license: 'None Provided'
 category:
   - 311 Data
+maintainer: City of Miami
 ---

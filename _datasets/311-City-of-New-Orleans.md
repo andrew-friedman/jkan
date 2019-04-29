@@ -13,6 +13,9 @@ resources:
   - name: City of New Orleans Download Website
     url: 'https://data.nola.gov/City-Administration/311-Calls-Historic-Data-2012-2018-/3iz8-nghx'
     format: url
+license: 'http://creativecommons.org/publicdomain/zero/1.0/legalcode'
 category:
   - 311 Data
+maintainer: City of New Orleans GIS Department
+maintainer email: data@nola.gov
 ---

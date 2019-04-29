@@ -10,6 +10,8 @@ resources:
   - name: City of Louisville Download Website
     url: 'https://data.louisvilleky.gov/dataset/311-service-requests'
     format: url
+license: 'Public Domain'
 category:
   - 311 Data
+maintainer: MetroCall
 ---

@@ -13,6 +13,8 @@ resources:
   - name: City of San Francisco Download Website
     url: 'https://data.sfgov.org/City-Infrastructure/311-Cases/vw6y-z8j6'
     format: url
+license: 'http://opendatacommons.org/licenses/pddl/1.0/'
 category:
   - 311 Data
+maintainer: AndyM
 ---

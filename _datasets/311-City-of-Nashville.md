@@ -13,6 +13,8 @@ resources:
   - name: City of Nashville Download Website
     url: 'https://data.nashville.gov/Public-Services/hubNashville-311-Service-Request-Data/7qhx-rexh'
     format: url
+license: 'http://opendatacommons.org/licenses/pddl/1.0/'
 category:
   - 311 Data
+maintainer: hubNashville Data
 ---

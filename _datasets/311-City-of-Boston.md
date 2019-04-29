@@ -13,6 +13,9 @@ resources:
   - name: City of Boston Download Website
     url: 'https://data.boston.gov/dataset/311-service-requests'
     format: url
+license: 'Open Data Commons Public Domain Dedication and License (PDDL)'
 category:
   - 311 Data
+maintainer: Boston 311
+maintainer email: 311supervisors@boston.gov
 ---

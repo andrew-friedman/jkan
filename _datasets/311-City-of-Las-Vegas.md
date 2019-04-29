@@ -13,6 +13,8 @@ resources:
   - name: City of Las Vegas Download Website
     url: 'https://opendata.lasvegasnevada.gov/Public-Safety/Service-Requests/ixm8-ujty'
     format: url
+license: 'https://opendata.lasvegasnevada.gov/stories/s/tuqa-4dr5'
 category:
   - 311 Data
+maintainer: Nichole Malichky
 ---

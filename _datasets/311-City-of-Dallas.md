@@ -13,6 +13,8 @@ resources:
   - name: City of Dallas Download Website
     url: 'https://www.dallasopendata.com/City-Services/311-Service-Requests-October-1-2018-to-Present-/m36q-vtbr'
     format: url
+license: 'http://opendatacommons.org/licenses/pddl/1.0/'
 category:
   - 311 Data
+maintainer: Dallas Open Data
 ---

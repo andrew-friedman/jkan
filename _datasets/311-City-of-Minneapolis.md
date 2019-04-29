@@ -13,6 +13,9 @@ resources:
   - name: City of Minneapolis Download Website
     url: 'http://opendata.minneapolismn.gov/datasets/public-311-2019-ytd'
     format: url
+license: 'http://creativecommons.org/licenses/by-sa/4.0'
 category:
   - 311 Data
+maintainer: City of Minneapolis
+maintainer email:  311OpenData@minneapolismn.gov
 ---

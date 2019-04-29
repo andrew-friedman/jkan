@@ -13,6 +13,9 @@ resources:
   - name: City of San Antonio Download Website
     url: 'https://data.sanantonio.gov/dataset/service-calls'
     format: url
+license: 'http://opendefinition.org/okd/'
 category:
   - 311 Data
+maintainer: paula.stallcup@sanantonio.gov
+maintainer email: Paula Stallcup
 ---

@@ -13,6 +13,8 @@ resources:
   - name: Kansas City Government Download Website
     url: 'https://data.kcmo.org/311/311-Call-Center-Service-Requests/7at3-sxhp'
     format: url
+license: 'Public Domain'
 category:
   - 311 Data
+maintainer: KCMO Information Technology
 ---
