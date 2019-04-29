@@ -1,4 +1,4 @@
-<ol class="breadcrumb">
+<ol class="breadcrumb fix-bc">
   {% if page.title == site.title %}
     <li class="active"><i class="fa fa-home" aria-label="Home"></i></li>
   {% else %}
@@ -9,6 +9,6 @@
         <li><a href="{{ site.baseurl }}{{ parent.url }}">{{ parent.title }}</a></li>
       {% endif %}
     {% endif %}
-    <li class="active">{{ page.title }}</li>
+    <li class="active fix-title">{{ page.title }}</li>
   {% endif %}
 </ol>

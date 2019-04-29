@@ -2,7 +2,7 @@
   width: 64px;
 }
 
-dataset {
+.dataset {
   display: block;
   border-bottom: 1px #d6d6d6 solid;
   padding-bottom: 20px;
@@ -97,16 +97,5 @@ dataset {
 
 .theme-gallery .panel-primary {
   border-width: 5px;
-}
-
-.footer-container {
-  background-color:#4a4a4a;
-  width: 100%;
-  height: 200px;
-  padding:10px;
-  overflow:auto;
-  text-align:center;
-  float:left;
-  margin-top:50px;
 }
 

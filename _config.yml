@@ -5,7 +5,7 @@ baseurl: /jkan
 logo: /img/jkan.png
 
 # Site theme
-jkan_theme: Default
+jkan_theme: Lumen
 
 # Authentication
 github_client_id: 8bf4e878a8fbc260b065
@@ -20,6 +20,8 @@ navigation:
     url: /datasets/
   - title: Organizations
     url: /organizations/
+  - title: Mobile Sharps Example
+    url: /mobilesharps/
 
 # Collections
 collections:

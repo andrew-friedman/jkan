@@ -1,0 +1,383 @@
+.footer-container {
+  background-color:#4a4a4a;
+  width: 100%;
+  height: 100%;
+  text-align:center;
+}
+
+.footer-img {
+  max-width:50%;
+  float:right;
+  width:50%;
+  margin-right:25px;
+}
+
+.footer-navbar {
+  background-color: #333;
+  position: fixed;
+  bottom: 0;
+  width: 50%;
+}
+
+/* Style the links inside the navigation bar */
+.footer-hr {
+  margin: 10% 15% 5%;
+  margin-top: 0px;
+  margin-bottom: 30px;
+}
+
+.footer-navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.footer-navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.footer-icon-bar {
+  margin-bottom: 20px;
+}
+.footer-icon {
+  margin-bottom: 35px;
+  margin-left: 2px;
+  margin-right: 20px;
+  color: #fff;
+}
+
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Los_Angeles_City_Hall_2013.jpg");
+  height: 370px;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+.banner-main {
+  text-align: center;
+  width:90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.banner-sub {
+    text-align: left;
+    width:90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+
+.hero-text button {
+  border: none;
+  outline: 0;
+  padding: 10px 25px;
+  color: black;
+  background-color: #ddd;
+  text-align: left;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.TitleBanner {
+  color: white;
+  box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.75);
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/2f/Los_Angeles_City_Hall_2013.jpg");
+}
+
+.btn-banner {
+  float:left;
+}
+
+.signup {
+  background-color: #1c2345;
+  height: 160px;
+  width:100%;
+  margin:0px;
+  padding:0px;
+  text-align: center;
+}
+
+
+.name-box {
+    border-left: 1px solid;
+    border-top: 1px solid;
+    border-right: 1px ridge #d3d3d3;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height:40px;
+    float:center;
+    padding:0px;
+    display: inline-block
+}
+
+.email-box {
+    border-right: 1px solid;
+    border-top: 1px solid;
+    border-left: 1px ridge #d3d3d3;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    height:40px;
+    float:center;
+    padding:0px;
+    margin: -5px;
+    display: inline-block
+}
+
+.btn-sumbit {
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  margin-top:-3px;
+  margin-left: 5px;
+  width:295px;
+  background-color:#009cde;
+  height:40px;
+  color:white;
+  display: inline-block
+}
+
+a {
+  color:#009cde ;
+}
+.badge {
+  color:white;
+  background-color:#009cde;
+}
+
+.search-bar {
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  border-bottom: 3px solid;
+  border-radius: 1px;
+  border-color: #009cde;
+  background: #fff;
+}
+.search-bar:focus {
+  outline:none;
+  box-shadow:none;
+  outline-width: 0;
+}
+
+.list-group-item.active:hover {
+  background-color:#009cde;
+}
+
+.list-group-item.active,
+.list-group-item.active:focus {
+  background-color:#009cde;
+}
+
+.list-group-item.active .badge {
+  color:#009cde;
+  background-color:white;  
+}
+
+.fix-bc {
+  background-color: #fff;
+  border-color: #fff;
+  margin-bottom:0px;
+  padding-bottom:0px;
+}
+
+.text-about {
+  text-align:center;
+  font-weight: 700;
+}
+
+.p-about {
+  font-size:22px;
+}
+
+.fix-pc .li {
+  color:black;
+}
+
+.fix-pc > .active {
+  color:black;
+}
+
+.active.fix-title {
+  color:black;
+}
+
+.footer-social {
+  background-color: #4a4a4a
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+}
+
+.footer-list {
+  margin:0;
+  padding:0;
+  color:#000;
+  display: inline-block;
+  list-style-type:none;
+}
+.footer-list-item {
+    display: inline-block;
+    list-style:none;
+    float:left;
+
+}
+
+.footer-link {
+  color:white;
+  margin:0 8px;
+}
+
+.footer-list-div {
+  width:100%;
+  text-align:center;
+  background-color: #4a4a4a;
+  height:20px;
+}
+
+.navbar-brand {
+  font-weight: 300;
+}
+
+.footer-navbar-new {
+
+}
+
+.footer-navbar-list {
+    width:100%;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 50%;
+  padding: 0px;
+}
+
+.footer-navbar-li {
+  font-size: 2.6vw;
+  width:100%;
+  clear:both;
+  text-align:left;
+}
+
+.br-special {
+  margin: 20px 0;
+}
+
+
+.table-updates {
+  width:100%;
+  padding:0px;
+  margin:0px;
+  border-collapse: collapse;
+}
+
+.table-tr {
+  padding:0px;
+  margin:0px;
+  border-spacing:none;
+  border:none;
+}
+
+.table-td {
+  background-color:blue;
+  padding:0px;
+  margin:0px;
+  border-spacing: none;
+  border:none;
+  width: 300px;
+  height:300px;
+}
+.table-td-2x {
+  background-color:blue;
+  padding:0px;
+  margin:0px;
+  border-spacing: none;
+  border:none;
+  height:600px;
+}
+
+.missing-list-div {
+  width: 420px;
+  margin: 0px;
+}
+
+.missing-list-h2 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.missing-list-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.missing-list-li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-bottom: 1px solid #ccc;]
+  list-style-type:none;
+}
+
+.missing-list-li:last-child {
+  border: none;
+}
+
+.missing-list-li a {
+  text-decoration: none;
+  color: #000;
+
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+  width: 420px;
+}
+
+.missing-list-li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
+
+.get-involved {
+  font-size:20px;
+}
+
+
+
+
