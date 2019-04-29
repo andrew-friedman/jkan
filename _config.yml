@@ -21,7 +21,9 @@ navigation:
   - title: Organizations
     url: /organizations/
   - title: Mobile Sharps Example
-    url: /mobilesharps/
+    url: /mobilesharps
+  - title: Missing Datasets
+    url: /missing
 
 # Collections
 collections:
