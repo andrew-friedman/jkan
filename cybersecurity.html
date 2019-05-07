@@ -1,0 +1,96 @@
+---
+layout: default
+---  
+</div>
+<div class="hero-image">
+  <div class="banner-main">
+    <h1 style="font-size:50px;font-weight: 400px;">{{ site.greeting }}</h1>
+    <p style="font-weight: 200px; font-size:20px">{{ site.description }}</p>
+  <p><a class="btn btn-primary btn-lg" href="{{ site.baseurl }}/mobilesharps" role="button" style="background-color:#009cde">Start Browsing</a></p>
+  </div>
+</div>
+
+<div id="sign-up" class="signup">
+  <h2 style="color:white;padding-top:10px;padding-bottom:10px;margin:0px;text-align:center;">Sign Up To Recieve Updates</h2>
+  <form>
+    <div class="container" style="float:center">
+      <input class="name-box"type="Name" placeholder="Name" name="name" required>
+      <input class="email-box" type="Email" placeholder="Email" name="email" required>
+    </div>
+    <div class="container" style="float:center">
+      <button type="submit" class="btn btn-sumbit">Submit</button>
+    </div>
+    </div>
+  </form>
+
+</div>
+<br>
+<h1 class="text-about">ABOUT</h1> 
+<p class="p-about">The National 311 Data Portal includes 311 and service request datasets for the 50 largest US Cities. Through centrally locating the 311 datasets, large scale analysis between cities is significantly easier. The site also includes <a href="{{ site.baseurl }}/mobilesharps">a case study of Boston's Mobile Sharps Team</a> using 311 Data, and information related to missing 311 datasets.</p>
+<br><br><br>
+<h1 class="text-about">WAYS TO ENGAGE</h1> 
+<div>
+  <table class="table-updates">
+    <tr class="table-tr">
+      <th class="table-td" style="width:275px;height:275px;background-color: grey">
+        <a href=/jkan/mobilesharps/ style="max-width: 100%;height: 100%;display: table-cell;padding:20px 10px;display:block;color:#FFFFFF;text-align:center">
+          <font style="padding:10px;" size="4" color="#ffffff"><br><br><br>Check Out An Example of 311 Data Analysis About Boston's Mobile Sharps Team </font>
+        </a>
+      </th>
+      
+      <th class="table-td" style="width:275px;height:275px;background-color: #5280A2">
+        <a href=/jkan/missing/ style="max-width: 100%;height: 100%;display: table-cell;padding:20px 10px;display:block;color:#FFFFFF;text-align:center">
+          <font style="padding:10px;" size="4" color="#ffffff"><br><br><br><br>Discover which datasets are missing</font>
+        </a>
+
+      </th>
+      
+
+      <th rowspan="2" class="table-td" style="background-color:#23334C">
+        <a onclick="javascript:openSite();"  style="height:100%;padding:20px 10px;display:block;color:#FFFFFF;text-align:center">
+          <font style="padding:10px;" size="4" color="#ffffff"><br><br><br><br><br><br><br><br><br><br>See A Random Dataset</font>
+        </a>
+
+
+      </th>
+
+    </tr>
+
+    <tr class="table-tr">
+      <th class="table-td" style="width:275px;height:275px;background-color:#fff">
+        <a href=/jkan/missing/ style="max-width: 100%;height: 100%;display: table-cell;padding:20px 10px;display:block;color:#FFFFFF;text-align:center">
+          <font style="padding:10px;" size="4" color="#100"><br><br><br><br>Start Browsing Databases Now</font>
+        </a>
+
+      </th>
+
+      <th class="table-td" style="width:275px;height:275px;background-color:#00C7DE">
+        <a href="https://twitter.com/311Data" style="height:100%;padding:20px 10px;display:block;color:#FFFFFF;text-align:center">
+          <font style="padding:10px;" size="4" color="#ffffff"><br><br><br>Engage with Our Twitter To Hear About New Data Sets</font>
+        </a>
+</th>
+
+    </tr>
+  </table><br><br>
+
+</div>
+
+<a class="twitter-timeline" href="https://twitter.com/311Data?ref_src=twsrc%5Etfw">Tweets by 311Data</a>
+
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<script>
+  var cityData = Array('311-New-York-City-Government', '311-City-of-Los-Angeles', '311-City-of-Chicago', '311-City-of-Houston', '311-City-of-Phoenix', '311-City-of-Philadelphia', '311-City-of-San-Antonio', '311-City-of-San-Diego', '311-City-of-Dallas', '311-City-of-Austin', '311-City-of-San-Francisco', '311-City-of-Denver', '311-City-of-Boston', '311-City-of-Nashville', '311-City-of-Memphis', '311-City-of-Las-Vegas', '311-City-of-Louisville', '311-City-of-Baltimore', '311-City-of-Milwaukee', '311-City-of-Sacramento', '311-Kansas-City-Government', '311-City-of-Miami', '311-City-of-Oakland', '311-City-of-Minneapolis', '311-City-of-New-Orleans');
+
+  var openSite = function() {
+
+    var randIdx = Math.random() * cityData.length;
+
+    randIdx = parseInt(randIdx, 10);
+
+    var link = '/jkan/datasets/' + cityData[randIdx];
+    window.open(link);
+    };
+
+
+</script>
