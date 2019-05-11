@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8' />
+  <title>Enviromental Complaints</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.js'></script>
+  <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v0.53.1/mapbox-gl.css' rel='stylesheet' />
+  <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.min.js'></script>
+  <link rel='stylesheet' href='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.2.0/mapbox-gl-geocoder.css' type='text/css' />
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #map {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id='map'></div>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYWpmcmllZG1hbiIsImEiOiJjanZpeW1ueW8wYjJ2NDRxcnp6NXRzOXQ2In0.6n6ldtfRc4maiF0p0R7xYg';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/light-v10',
+      center: [-87.590,41.793],
+      zoom: 12
+    });
+
+    map.on('load', function() {
+      var geocoder = new MapboxGeocoder({
+        accessToken: mapboxgl.accessToken,
+        mapboxgl: mapboxgl,
+        zoom: 13,
+        placeholder: "Enter an address or place name",
+        bbox: [-87.939448,41.643998,-87.476708,42.033174]
+      }); 
+
+      map.addControl(geocoder, 'top-left');
+
+      var marker = new mapboxgl.Marker({'color': '#008000'})
+
+      geocoder.on('result', function(data) {
+
+        var point = data.result.center;
+        var tileset = 'ajfriedman.20twjrfu';
+        var radius = 1609;
+        var limit = 50;
+        var query = 'https://api.mapbox.com/v4/' + tileset + '/tilequery/' + point[0] + ',' + point[1] + '.json?radius=' + radius + '&limit= ' + limit + ' &access_token=' + mapboxgl.accessToken;
+        console.log(query);
+
+        marker.setLngLat(point).addTo(map);
+
+        $.ajax({
+          method: 'GET',
+          url: query,
+        }).done(function(data) {
+          map.getSource('tilequery').setData(data);
+        })
+      });
+
+      map.addSource('tilequery', {
+        type: "geojson",
+        data: {
+          "type": "FeatureCollection",
+          "features": []
+        }
+      });
+
+      map.addLayer({
+        id: "tilequery-points",
+        type: "circle",
+        source: "tilequery",
+        paint: {
+          "circle-stroke-color": "white",
+          "circle-stroke-width": {
+            stops: [
+              [0, 0.1],
+              [18, 3]
+            ],
+            base: 5
+          },
+          "circle-radius": {
+            stops: [
+              [12, 5],
+              [22, 180]
+            ],
+            base: 5
+          },
+          "circle-color": [
+            'match',
+            ['get', 'COMPLAINT_TYPE'],
+            'Abandoned Site', '#1E90FF',
+            'ABANDONED SITE', '#1E90FF',
+            'AIR POLLUTION WORK ORDER', '#9ACD32',
+            'Air Pollution Work Order', '#9ACD32',
+            'Asbestos Work Order', '#008000',
+            'ASBESTOS WORK ORDER', '#008000',
+            'CONSTRUCTION AND DEMOLITION', '#008000',
+            'Illegal Dumping Work Order', '#9ACD32',
+            'ILLEGAL DUMPING WORK ORDER', '#9ACD32',
+            'Other', '#FF0000',
+            'Recycling Work Order', '#008000',
+            'RECYCLING WORK ORDER', '#008000',
+            'Service Stations/Storage Tanks Work Order', '#008000',
+            'SERVICE STATIONS/STORAGE TANKS WORK ORDER', '#008000',
+            'Toxics Hazardous Materials Work Order', '#008000',
+            'TOXICS HAZARDOUS MATERIALS WORK ORDER', '#008000',
+            'Water Pollution', '#1E90FF',
+            'WATER POLLUTION', '#1E90FF',
+            '#FF0000' // any other store type
+          ]
+        }
+      });
+
+      var popup = new mapboxgl.Popup;
+
+      map.on('mouseenter', 'tilequery-points', function(e) {
+        map.getCanvas().style.cursor = 'pointer';
+
+        var title = '<h3>' + e.features[0].properties.COMPLAINT_TYPE + '</h3>';
+        var dataSource = '<h4>' + e.features[0].properties.DATA_SOURCE + '</h4>';
+        var mappedLoc = '<p>' + e.features[0].properties.MAPPED_LOCATION + '</p>';
+        var obj = JSON.parse(e.features[0].properties.tilequery);
+        var distance = '<p>' + (obj.distance / 1609.344).toFixed(2) + ' mi. from location' + '</p>';
+
+        var lon = e.features[0].properties.longitude;
+        var lat = e.features[0].properties.latitude;
+        var coordinates = new mapboxgl.LngLat(lon, lat);
+        var content = title + dataSource + mappedLoc + distance;
+
+        popup.setLngLat(coordinates)
+          .setHTML(content)
+          .addTo(map);
+      })
+
+      map.on('mouseleave', 'tilequery-points', function() {
+        map.getCanvas().style.cursor = '';
+        popup.remove();
+      });
+
+    })
+  </script>
+
+</body>
+
+</html>
