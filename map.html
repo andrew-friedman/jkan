@@ -38,6 +38,23 @@
     });
 
     map.on('load', function() {
+ 
+
+    map.addLayer({
+    'id': 'chicago-wards',
+    'type': 'fill',
+    'source': {
+    'type': 'geojson',
+    'data': 'https://data.cityofchicago.org/resource/y6yq-dbs2.geojson'
+    },
+    'layout': {},
+    'paint': {
+    'fill-color': '#c0e6f5',
+    'fill-opacity': 0.23,
+    'fill-outline-color': 'black'
+    }
+    });
+
       var geocoder = new MapboxGeocoder({
         accessToken: mapboxgl.accessToken,
         mapboxgl: mapboxgl,
